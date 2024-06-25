@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/leaf.png" type="image/x-icon">
+
+    <title>Beex Store | Principal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body class="bg-[#1f2c43] bg-opacity-5">
+    <nav class="fixed z-50 w-screen h-16 flex justify-between items-center bg-[#263b51]">
+        <section class="ml-6 flex gap-3 items-center cursor-pointer">
+            <button
+                data-drawer-target="drawer-navigation"
+                data-drawer-toggle="drawer-navigation"
+                aria-controls="drawer-navigation"
+                class="p-2 mr-2 text-white rounded-lg cursor-pointer md:hidden">
+                <svg
+                  aria-hidden="true"
+                  class="w-6 h-6"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    fill-rule="evenodd"
+                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                    clip-rule="evenodd"></path>
+                </svg>
+                <svg
+                  aria-hidden="true"
+                  class="hidden w-6 h-6"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    fill-rule="evenodd"
+                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                    clip-rule="evenodd"></path>
+                </svg>
+                <span class="sr-only">Toggle sidebar</span>
+            </button>
+            <img class="h-8 w-8" src="./images/leaf.png" alt="Logo de la empresa">
+            <a class="text-xl font-medium text-gray-50" href="/index.html">Beex Store</a>
+        </section>
+        <section class="mr-6">
+            <ul class="flex gap-6 cursor-pointer">
+                <li class="font-base text-slate-700 p-2 hover:bg-slate-200 rounded-lg"></li>
+                <li class="font-base text-slate-700 p-2 hover:bg-slate-200 rounded-lg"></li>
+                <li class="font-base text-slate-700 p-2 hover:bg-slate-200 rounded-lg"></li>
+            </ul>
+        </section>
+    </nav>
+
+
+
+
+
+
+    <aside class="fixed z-40 h-screen left-0 w-44 mt-16 bg-[#263b51] transition-transform -translate-x-full md:translate-x-0" aria-label="Sidenav" id="drawer-navigation">
+        <ul class="m-4 space-y-4 cursor-pointer">
+            <li class="hover:bg-[#1f2c43] rounded-lg">
+                <button class="flex items-center p-2 rounded-lg text-white bg-transparent">
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8v10a1 1 0 0 0 1 1h4v-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v5h4a1 1 0 0 0 1-1V8M1 10l9-9 9 9"/>
+                    </svg>
+                    <a class="ml-3 font-base" href="/index.html">Principal</a>
+                </button>
+            </li>
+            <li class="flex items-center p-2 rounded-lg hover:bg-[#1f2c43]">
+                <svg class="w-5 h-5 text-gray-50" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 19 18">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.583 5.445h.01M8.86 16.71l-6.573-6.63a.993.993 0 0 1 0-1.4l7.329-7.394A.98.98 0 0 1 10.31 1l5.734.007A1.968 1.968 0 0 1 18 2.983v5.5a.994.994 0 0 1-.316.727l-7.439 7.5a.975.975 0 0 1-1.385.001Z"/>
+                </svg>
+                <a class="ml-3 text-gray-50 font-base" href="/pages/sales.html">Ventas</a>
+            </li>
+            <li class="flex items-center p-2 rounded-lg hover:bg-[#1f2c43]">
+                <svg class="w-5 h-5 text-gray-50" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9V4a3 3 0 0 0-6 0v5m9.92 10H2.08a1 1 0 0 1-1-1.077L2 6h14l.917 11.923A1 1 0 0 1 15.92 19Z"/>
+                </svg>
+                <a class="ml-3 font-base text-gray-50" href="/pages/purchases.html">Compras</a>
+            </li>
+            <li class="flex items-center p-2 rounded-lg hover:bg-[#1f2c43]">
+                <svg class="w-5 h-5 text-gray-50" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 20">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 17V2a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a2 2 0 0 0-2 2Zm0 0a2 2 0 0 0 2 2h12M5 15V1m8 18v-4"/>
+                </svg>
+                <a class="ml-3 font-base text-gray-50" href="/pages/inventory.html">Inventario</a>
+            </li>
+            <li class="flex items-center p-2 rounded-lg hover:bg-[#1f2c43]">
+                <svg class="w-5 h-5 text-gray-50" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 18">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 3a3 3 0 1 1-1.614 5.53M15 12a4 4 0 0 1 4 4v1h-3.348M10 4.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0ZM5 11h3a4 4 0 0 1 4 4v2H1v-2a4 4 0 0 1 4-4Z"/>
+                </svg>
+                <a class="ml-3 font-base text-gray-50" href="/pages/clients.html">Clientes</a>
+            </li>
+            <li class="flex items-center p-2 rounded-lg hover:bg-[#1f2c43]">
+                <svg class="w-5 h-5 text-gray-50" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 16">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.5 10.25a2.25 2.25 0 1 0 0 4.5 2.25 2.25 0 0 0 0-4.5Zm0 0a2.225 2.225 0 0 0-1.666.75H12m3.5-.75a2.225 2.225 0 0 1 1.666.75H19V7m-7 4V3h5l2 4m-7 4H6.166a2.225 2.225 0 0 0-1.666-.75M12 11V2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v9h1.834a2.225 2.225 0 0 1 1.666-.75M19 7h-6m-8.5 3.25a2.25 2.25 0 1 0 0 4.5 2.25 2.25 0 0 0 0-4.5Z"/>
+                </svg>
+                <a class="ml-3 font-base text-gray-50" href="/pages/providers.html">Proveedores</a>
+            </li>
+            <li class="flex items-center p-2 rounded-lg hover:bg-[#1f2c43]">
+                <svg class="w-5 h-5 text-gray-50" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 1v16M1 9h16"/>
+                </svg>
+                <a class="ml-3 font-base text-gray-50" href="/pages/new.html">Nueva Venta</a>
+            </li>
+        </ul>
+    </aside>
+
+
+    <!--Renderizar responsive-->
+    <div class="relative h-full w-screen top-20 md:w-[calc(100%-12rem)] md:left-48 pr-4">
+        <div class="flex justify-between items-center">
+            <h2 class="text-xl font-semibold text-gray-800 ml-4 md:ml-0">Panel principal</h3>
+            <div class="flex flex-col items-end">
+                <div class="flex space-x-4">
+                    <select id="category" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-slate-500 focus:border-slate-500 w-full p-2">
+                        <option selected="">Hoy</option>
+                        <option value="">Ayer</option>
+                        <option value="">Hace una semana</option>
+                        <option value="">Hace un mes</option>
+                        <option value="">Hace una año</option>
+                        <option value="">Personalizado</option>
+                    </select>
+                    <button type="submit" class="text-white bg-[#263b51] bg-opacity-90 hover:bg-opacity-100 focus:ring-4 focus:outline-none focus:ring-slate-300 font-semibold w-full rounded-lg text-sm px-3 py-2 text-center">Generar reporte</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 ml-4 md:ml-0 md:grid-cols-2 lg:grid-cols-4 md:gap-4 mb-4">
+            <div class="md:max-w-sm rounded-lg shadow-lg mt-6 p-6 text-white bg-[#4C874F]">
+                <div class="flex justify-between">
+                    <div>
+                        <div class="text-base font-bold mb-4">Ganancias totales</div>
+                        <div class="text-3xl font-bold">$200,000</div>
+                    </div>
+                    <svg class="w-8 h-8 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" d="M11.905 1.316 15.633 6M18 10h-5a2 2 0 0 0-2 2v1a2 2 0 0 0 2 2h5m0-5a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1m0-5V7a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h15a1 1 0 0 0 1-1v-3m-6.367-9L7.905 1.316 2.352 6h9.281Z"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="md:max-w-sm rounded-lg shadow-lg mt-6 p-6 text-white bg-[#0066aa]">
+                <div class="flex justify-between">
+                    <div>
+                        <div class="text-base font-bold mb-4">Nuevos productos</div>
+                        <div class="text-3xl font-bold">1,200</div>
+                    </div>
+                    <svg class="w-8 h-8 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" d="M1 10h3.439a.991.991 0 0 1 .908.6 3.978 3.978 0 0 0 7.306 0 .99.99 0 0 1 .908-.6H17M1 10v6a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-6M1 10l2-9h12l2 9M6 4h6M5 7h8"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="md:max-w-sm rounded-lg shadow-lg mt-6 p-6 text-white bg-[#E0B42F]">
+                <div class="flex justify-between">
+                    <div>
+                        <div class="text-base font-bold mb-4">Productos por vencer</div>
+                        <div class="text-3xl font-bold">100</div>
+                    </div>
+                    <svg class="w-8 h-8 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M10 11V6m0 8h.01M19 10a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="md:max-w-sm rounded-lg shadow-lg mt-6 p-6 text-white bg-[#940000]">
+                <div class="flex justify-between">
+                    <div>
+                        <div class="text-base font-bold mb-4">Productos vencidos</div>
+                        <div class="text-3xl font-bold">0</div>
+                    </div>
+                    <svg class="h-8 w-8 text-white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x-octagon"><polygon points="7.86 2 16.14 2 22 7.86 22 16.14 16.14 22 7.86 22 2 16.14 2 7.86 7.86 2"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4 ml-4 md:ml-0">
+            <div class="border rounded-lg shadow-md bg-white">
+                <div class="border-b flex justify-between items-center py-4 mx-4">
+                    <div>
+                        <p class="text-xl font-medium">Ventas totales</p>
+                        <p class="text-sm text-gray-400">Ventas totales del día de ayer</p>
+                    </div>
+                    <div>
+                        <select id="interval" class="border border-gray-300 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block px-3.5 py-2">
+                            <option selected="">Ventas totales</option>
+                            <option value="">Facturación total</option>
+                            <option value="">Productos</option>
+                        </select>
+                    </div>
+                </div>
+                <div id="line-chart"></div>
+            </div>
+            <div class="border rounded-lg shadow-md bg-white">
+                <div class="border-b py-4 mx-4">
+                    <p class="text-xl font-medium">Metodo de pago</p>
+                    <p class="text-sm text-gray-400">Distribucion de los metodos de pago del día de ayer</p>
+                </div>
+                <div id="donut-chart" class="grid grid-cols-1 justify-items-center"></div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+        <div class="grid grid-cols-1 xl:grid-cols-3 gap-4 mb-4 ml-4 md:ml-0">
+            <div class="p-4 text-black border rounded-lg shadow-md sm:p-6 bg-white">
+                <div class="text-lg font-medium text-start text-gray-500 divide-x divide rounded-lg sm:flex">
+                    <p class="w-full pb-4 bg-white text-black">Productos con más ganancias</p>
+                </div>
+                <div id="fullWidthTabContent" class="border-t">
+                    <div class="pt-3" id="faq" role="tabpanel" aria-labelledby="faq-tab">
+                        <ul role="list" class="divide-y">
+                            <li class="py-3 sm:py-4">
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center min-w-0">
+                                        <img class="flex-shrink-0 w-10 h-10" src="./images/nes.webp" alt="imac image">
+                                        <div class="ml-3">
+                                            <p class="font-medium text-black">
+                                                Producto 1 
+                                            </p>
+                                            <div class="flex items-center justify-end flex-1 text-sm text-green-500">
+                                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                                    <path clip-rule="evenodd" fill-rule="evenodd" d="M10 17a.75.75 0 01-.75-.75V5.612L5.29 9.77a.75.75 0 01-1.08-1.04l5.25-5.5a.75.75 0 011.08 0l5.25 5.5a.75.75 0 11-1.08 1.04l-3.96-4.158V16.25A.75.75 0 0110 17z"></path>
+                                                </svg>
+                                                2.5% 
+                                                <span class="ml-2 text-gray-500">vs mes pasado</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="inline-flex items-center text-base font-semibold text-black">
+                                        $445,467
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="py-3 sm:py-4">
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center min-w-0">
+                                        <img class="flex-shrink-0 w-10 h-10" src="./images/nes.webp" alt="imac image">
+                                            <div class="ml-3">
+                                                <p class="font-medium text-black">
+                                                    Producto 2
+                                                </p>
+                                                <div class="flex items-center justify-end flex-1 text-sm text-green-500">
+                                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                                        <path clip-rule="evenodd" fill-rule="evenodd" d="M10 17a.75.75 0 01-.75-.75V5.612L5.29 9.77a.75.75 0 01-1.08-1.04l5.25-5.5a.75.75 0 011.08 0l5.25 5.5a.75.75 0 11-1.08 1.04l-3.96-4.158V16.25A.75.75 0 0110 17z"></path>
+                                                    </svg>
+                                                    12.5% 
+                                                    <span class="ml-2 text-gray-500">vs mes pasado</span>
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <div class="inline-flex items-center text-base font-semibold text-black">
+                                        $256,982
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="py-3 sm:py-4">
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center min-w-0">
+                                        <img class="flex-shrink-0 w-10 h-10" src="./images/nes.webp" alt="watch image">
+                                            <div class="ml-3">
+                                                <p class="font-medium text-black">
+                                                    Producto 3
+                                                </p>
+                                                <div class="flex items-center justify-end flex-1 text-sm text-red-600">
+                                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                                        <path clip-rule="evenodd" fill-rule="evenodd" d="M10 3a.75.75 0 01.75.75v10.638l3.96-4.158a.75.75 0 111.08 1.04l-5.25 5.5a.75.75 0 01-1.08 0l-5.25-5.5a.75.75 0 111.08-1.04l3.96 4.158V3.75A.75.75 0 0110 3z"></path>
+                                                    </svg>
+                                                    1.35% 
+                                                    <span class="ml-2 text-gray-500">vs mes pasado</span>
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <div class="inline-flex items-center text-base font-semibold text-black">
+                                        $201,869
+                                    </div>
+                                </div>
+                            </li>          
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="p-4 text-black border border rounded-lg shadow-md sm:p-6 bg-white">
+                <div class="text-lg font-medium text-start text-gray-500 divide-x divide rounded-lg sm:flex">
+                    <p class="w-full pb-4 bg-white text-black">Productos con más ventas</p>
+                </div>
+                <div id="fullWidthTabContent" class="border-t">
+                    <div class="pt-3" id="faq" role="tabpanel" aria-labelledby="faq-tab">
+                        <ul role="list" class="divide-y">
+                            <li class="py-3 sm:py-4">
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center min-w-0">
+                                        <img class="flex-shrink-0 w-10 h-10" src="./images/nes.webp" alt="imac image">
+                                        <div class="ml-3">
+                                            <p class="font-medium text-black">
+                                                Producto 1 
+                                            </p>
+                                            <div class="flex items-center justify-end flex-1 text-sm text-green-500">
+                                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                                    <path clip-rule="evenodd" fill-rule="evenodd" d="M10 17a.75.75 0 01-.75-.75V5.612L5.29 9.77a.75.75 0 01-1.08-1.04l5.25-5.5a.75.75 0 011.08 0l5.25 5.5a.75.75 0 11-1.08 1.04l-3.96-4.158V16.25A.75.75 0 0110 17z"></path>
+                                                </svg>
+                                                2.5% 
+                                                <span class="ml-2 text-gray-500">vs mes pasado</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="inline-flex items-center text-base font-semibold text-black">
+                                        700
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="py-3 sm:py-4">
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center min-w-0">
+                                        <img class="flex-shrink-0 w-10 h-10" src="./images/nes.webp" alt="imac image">
+                                            <div class="ml-3">
+                                                <p class="font-medium text-black">
+                                                    Producto 2
+                                                </p>
+                                                <div class="flex items-center justify-end flex-1 text-sm text-green-500">
+                                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                                        <path clip-rule="evenodd" fill-rule="evenodd" d="M10 17a.75.75 0 01-.75-.75V5.612L5.29 9.77a.75.75 0 01-1.08-1.04l5.25-5.5a.75.75 0 011.08 0l5.25 5.5a.75.75 0 11-1.08 1.04l-3.96-4.158V16.25A.75.75 0 0110 17z"></path>
+                                                    </svg>
+                                                    12.5% 
+                                                    <span class="ml-2 text-gray-500">vs mes pasado</span>
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <div class="inline-flex items-center text-base font-semibold text-black">
+                                        600
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="py-3 sm:py-4">
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center min-w-0">
+                                        <img class="flex-shrink-0 w-10 h-10" src="./images/nes.webp" alt="watch image">
+                                            <div class="ml-3">
+                                                <p class="font-medium text-black">
+                                                    Producto 3
+                                                </p>
+                                                <div class="flex items-center justify-end flex-1 text-sm text-red-600">
+                                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                                        <path clip-rule="evenodd" fill-rule="evenodd" d="M10 3a.75.75 0 01.75.75v10.638l3.96-4.158a.75.75 0 111.08 1.04l-5.25 5.5a.75.75 0 01-1.08 0l-5.25-5.5a.75.75 0 111.08-1.04l3.96 4.158V3.75A.75.75 0 0110 3z"></path>
+                                                    </svg>
+                                                    1.35% 
+                                                    <span class="ml-2 text-gray-500">vs mes pasado</span>
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <div class="inline-flex items-center text-base font-semibold text-black">
+                                        500
+                                    </div>
+                                </div>
+                            </li>          
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="p-4 text-black border border rounded-lg shadow-md sm:p-6 bg-white">
+                <div class="text-lg font-medium text-start text-gray-500 divide-x divide rounded-lg sm:flex">
+                    <p class="w-full pb-4 bg-white text-black">Productos con más existencias</p>
+                </div>
+                <div id="fullWidthTabContent" class="border-t">
+                    <div class="pt-3" id="faq" role="tabpanel" aria-labelledby="faq-tab">
+                        <ul role="list" class="divide-y">
+                            <li class="py-3 sm:py-4">
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center min-w-0">
+                                        <img class="flex-shrink-0 w-10 h-10" src="./images/nes.webp" alt="imac image">
+                                        <div class="ml-3">
+                                            <p class="font-medium text-black">
+                                                Producto 1 
+                                            </p>
+                                            <div class="flex items-center justify-end flex-1 text-sm text-green-500">
+                                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                                    <path clip-rule="evenodd" fill-rule="evenodd" d="M10 17a.75.75 0 01-.75-.75V5.612L5.29 9.77a.75.75 0 01-1.08-1.04l5.25-5.5a.75.75 0 011.08 0l5.25 5.5a.75.75 0 11-1.08 1.04l-3.96-4.158V16.25A.75.75 0 0110 17z"></path>
+                                                </svg>
+                                                2.5% 
+                                                <span class="ml-2 text-gray-500">vs mes pasado</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="inline-flex items-center text-base font-semibold text-black">
+                                        $445,467
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="py-3 sm:py-4">
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center min-w-0">
+                                        <img class="flex-shrink-0 w-10 h-10" src="./images/nes.webp" alt="imac image">
+                                            <div class="ml-3">
+                                                <p class="font-medium text-black">
+                                                    Producto 2
+                                                </p>
+                                                <div class="flex items-center justify-end flex-1 text-sm text-green-500">
+                                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                                        <path clip-rule="evenodd" fill-rule="evenodd" d="M10 17a.75.75 0 01-.75-.75V5.612L5.29 9.77a.75.75 0 01-1.08-1.04l5.25-5.5a.75.75 0 011.08 0l5.25 5.5a.75.75 0 11-1.08 1.04l-3.96-4.158V16.25A.75.75 0 0110 17z"></path>
+                                                    </svg>
+                                                    12.5% 
+                                                    <span class="ml-2 text-gray-500">vs mes pasado</span>
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <div class="inline-flex items-center text-base font-semibold text-black">
+                                        $256,982
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="py-3 sm:py-4">
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center min-w-0">
+                                        <img class="flex-shrink-0 w-10 h-10" src="./images/nes.webp" alt="watch image">
+                                            <div class="ml-3">
+                                                <p class="font-medium text-black">
+                                                    Producto 3
+                                                </p>
+                                                <div class="flex items-center justify-end flex-1 text-sm text-red-600">
+                                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                                        <path clip-rule="evenodd" fill-rule="evenodd" d="M10 3a.75.75 0 01.75.75v10.638l3.96-4.158a.75.75 0 111.08 1.04l-5.25 5.5a.75.75 0 01-1.08 0l-5.25-5.5a.75.75 0 111.08-1.04l3.96 4.158V3.75A.75.75 0 0110 3z"></path>
+                                                    </svg>
+                                                    1.35% 
+                                                    <span class="ml-2 text-gray-500">vs mes pasado</span>
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <div class="inline-flex items-center text-base font-semibold text-black">
+                                        $201,869
+                                    </div>
+                                </div>
+                            </li>          
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="grid grid-cols-1 justify-items-center [calc(100% - 11rem)] p-6 text-gray-700">
+            &copy; 2023 Beex Store made with Flowbite.com
+        </footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="./js/charts.js"></script>
+</body>
+</html>
