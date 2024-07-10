@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../images/leaf.png" type="image/x-icon">
+
+    <title>Beex Store | Registro</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <main class="bg-[#1f2c43]">
+        <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto h-screen md:h-screen lg:py-0">
+            <div class="w-full p-8 rounded-lg shadow border sm:max-w-2xl bg-gray-800 border-gray-700">
+                <div class="text-gray-400 text-lg font-medium text-center p-4 flex justify-start">
+                    <div class="pr-10 flex flex-col items-center text-white">
+                        <img src="../../images/ready.svg" class="w-7 h-7 center">
+                        <p>Información personal</p>
+                    </div>
+                    <div class="pr-8">
+                        <p>2</p>
+                        <p>Información de cuenta</p>
+                    </div>
+                    <div>
+                        <p>3</p>
+                        <p>Verificación</p>
+                    </div>
+                </div>
+                <form class="p-4" action="#">
+                    <h1 class="pb-8 text-3xl font-semibold text-white">Registrate</h1>
+                    <div class="grid gap-4 mb-4 sm:grid-cols-2">
+                        <div>
+                            <label for="name" class="block mb-2 text-sm font-medium text-white">Nombre Completo</label>
+                            <input type="text" name="name" id="name" class="border rounded-lg block w-full p-2 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-4 focus:ring-blue-700 focus:border-blue-600 focus:ring-offset-0" placeholder="Nombre Completo">
+                        </div>
+                        <div>
+                            <label for="email" class="block mb-2 text-sm font-medium text-white">Email</label>
+                            <input type="text" name="email" id="email" class="border rounded-lg block w-full p-2 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-4 focus:ring-blue-700 focus:border-blue-600 focus:ring-offset-0" placeholder="Email">
+                        </div>
+                        <div>
+                            <label for="password" class="block mb-2 text-sm font-medium text-white">Contraseña</label>
+                            <input type="password" name="password" id="password" class="border rounded-lg block w-full p-2 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-4 focus:ring-blue-700 focus:border-blue-600 focus:ring-offset-0" placeholder="••••••••">
+                        </div>
+                        <div>
+                            <label for="password" class="block mb-2 text-sm font-medium text-white">Confirmar Contraseña</label>
+                            <input type="password" name="password" id="password" class="border rounded-lg block w-full p-2 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-4 focus:ring-blue-700 focus:border-blue-600 focus:ring-offset-0" placeholder="••••••••">
+                        </div>
+                        <div>
+                            <label for="country" class="block mb-2 text-sm font-medium text-white">Estado</label>
+                            <select id="country" class="border rounded-lg block w-full p-2 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-4 focus:ring-blue-700 focus:border-blue-600 focus:ring-offset-0">
+                                <option selected="">Estado de México</option>
+                                <option value="cdmx">Ciudad de México</option>  
+                            </select>
+                        </div>
+                        <div>
+                            <label for="phone" class="block mb-2 text-sm font-medium text-white">Telefono</label>
+                            <input type="text" name="phone" id="phone" class="border rounded-lg block w-full p-2 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-4 focus:ring-blue-700 focus:border-blue-600 focus:ring-offset-0" placeholder="55-678-910">
+                        </div>
+                    </div>
+                    <div class="flex items-start mb-6 text-white">
+                        <label class="relative flex items-center rounded-full cursor-pointer">
+                            <input id="ripple-on" type="checkbox" class="peer relative h-5 w-5 cursor-pointer appearance-none rounded-md bg-gray-700 border checked:border-blue-500 checked:bg-blue-500" />
+                            <span class="absolute text-white transition-opacity opacity-0 pointer-events-none peer-checked:opacity-100">
+                                <img src="../../images/good.svg" class="h-5 w-5">
+                            </span>
+                        </label>
+                        <p class="pl-2 text-sm text-gray-500 dark:text-gray-400">
+                            Al crear una cuenta en Beex Store aceptas <a href="#" class="font-medium text-blue-500 hover:underline dark:text-primary-500">Termino y condiciones</a> y <a href="#" class="font-medium text-blue-500 hover:underline dark:text-primary-500">Politica de privacidad</a>.
+                        </p>
+                    </div>
+
+                    <div class="grid gap-4 mb-4 sm:grid-cols-2">
+                        <button type="submit" class="w-full text-white bg-[#263b51] focus:ring-4 focus:outline-none font-semibold w-full rounded-lg text-sm px-3 py-2 text-center border bg-gray-800 border-gray-700 hover:bg-gray-700 focus:outline-none focus:ring-gray-600">Cancelar</button>
+                        <button type="submit" class="w-full text-white bg-[#263b51] bg-opacity-90 hover:bg-opacity-100 focus:ring-4 focus:outline-none font-semibold w-full rounded-lg text-sm px-3 py-3 text-center focus:ring-gray-600">Siguiente: Información de cuenta</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
