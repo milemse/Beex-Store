@@ -116,7 +116,7 @@
     <!--Renderizar responsive-->
     <div class="relative h-full w-screen top-20 md:w-[calc(100%-12rem)] md:left-48 pr-4">
         <div class="flex justify-between items-center">
-            <h2 class="text-xl font-semibold text-gray-800 ml-4 md:ml-0">Nueva Venta</h3>
+            <h2 class="text-2xl font-semibold text-gray-800 ml-4 md:ml-0">Nueva Venta</h3>
             <div class="flex flex-col items-end">
                 <div class="flex space-x-4">
                     <select id="category" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-slate-500 focus:border-slate-500 w-full p-2">
@@ -132,12 +132,79 @@
             </div>
         </div>
 
-        <div class="grid grid-cols-1 ml-4 md:ml-0 md:grid-cols-2 lg:grid-cols-4 md:gap-4 mb-4">
-            
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4 ml-4 md:ml-0">
-            
+        <div class="grid grid-cols-1 ml-4 lg:ml-0 lg:grid-cols-5 lg:gap-4 mb-4">
+            <div class="mt-6 h-screen w-full col-span-3 space-y-4">
+                <h2 class="text-xl text-gray-600 text-start font-medium mb-4">Introduce un nuevo producto</h2>
+                <input type="text" class="border rounded-lg block w-full p-2.5 border-gray-600 focus:ring-2 focus:ring-gray-600 focus:outline-none focus:ring-offset-0" placeholder="Introduce el nombre, sku, codigo de barras del producto" required="">
+            </div>
+            <div class="bg-white border border-gray-300 mt-6 h-screen w-full rounded-lg shadow-lg col-span-2 overflow-scroll">
+                <div class="w-full p-8">
+                    <h2 class="text-xl text-gray-600 text-start font-medium mb-4">Tu venta</h2>
+                    <hr class="divide-x-2 divide-black">
+                </div>
+                <div class="space-y-6">
+                    <div class="w-full px-8 flex justify-between items-center">
+                        <img class="flex-shrink-0 w-16 h-16 grow-0" src="../images/nes.webp" alt="Producto">
+                        <div class="grow flex flex-1 flex-col px-6">
+                            <h3 class="text-lg font-medium tracking-wide antialiased hover:underline hover:underline-offset-4 hover:cursor-pointer hover:opacity-70">Nescafe soluble 400gr.</h3>
+                            <p class="text-sm text-gray-500 font-light">Existencias: <span class="text-gray-700 font-medium">100</span></p>
+                            <p class="text-md text-gray-700 font-medium tracking-wider">$95.90 <span class="text-gray-500 font-normal">x 1</span></p>
+                        </div>
+                        <div class="grow-0">
+                            <button class="rounded-full bg-gray-200 w-8 h-8 inline-flex justify-center items-center font-normal subpixel-antialiased">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--lucide" width="14" height="14" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 6L6 18M6 6l12 12"></path></svg>
+                            </button>
+                        </div>
+                    </div>
+                    <hr class="ml-8 mr-8 divide divide-x-2">
+                    <div class="w-full px-8 flex justify-between items-center">
+                        <img class="flex-shrink-0 w-16 h-16 grow-0" src="../images/nes.webp" alt="Producto">
+                        <div class="grow flex flex-1 flex-col px-6">
+                            <h3 class="text-lg font-medium tracking-wide antialiased hover:underline hover:underline-offset-4 hover:cursor-pointer hover:opacity-70">Nescafe soluble 400gr.</h3>
+                            <p class="text-sm text-gray-500 font-light">Existencias: <span class="text-gray-700 font-medium">100</span></p>
+                            <p class="text-md text-gray-700 font-medium tracking-wider">$95.90 <span class="text-gray-500 font-normal">x 1</span></p>
+                        </div>
+                        <div class="grow-0">
+                            <button class="rounded-full bg-gray-200 w-8 h-8 inline-flex justify-center items-center font-normal subpixel-antialiased">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--lucide" width="14" height="14" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 6L6 18M6 6l12 12"></path></svg>
+                            </button>
+                        </div>
+                    </div>
+                    <hr class="ml-8 mr-8 divide divide-x-2">
+                    <div class="w-full px-8 flex justify-between items-center">
+                        <img class="flex-shrink-0 w-16 h-16 grow-0" src="../images/nes.webp" alt="Producto">
+                        <div class="grow flex flex-1 flex-col px-6">
+                            <h3 class="text-lg font-medium tracking-wide antialiased hover:underline hover:underline-offset-4 hover:cursor-pointer hover:opacity-70">Nescafe soluble 400gr.</h3>
+                            <p class="text-sm text-gray-500 font-light">Existencias: <span class="text-gray-700 font-medium">100</span></p>
+                            <p class="text-md text-gray-700 font-medium tracking-wider">$95.90 <span class="text-gray-500 font-normal">x 1</span></p>
+                        </div>
+                        <div class="grow-0">
+                            <button class="rounded-full bg-gray-200 w-8 h-8 inline-flex justify-center items-center font-normal subpixel-antialiased">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--lucide" width="14" height="14" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 6L6 18M6 6l12 12"></path></svg>
+                            </button>
+                        </div>
+                    </div>
+                    <hr class="ml-8 mr-8 divide divide-x-2">
+                </div>
+                <div class="px-8 mt-6 space-y-6">
+                    <div class="flex justify-between">
+                        <p class="text-md text-gray-500 font-light">Subtotal:</p>
+                        <p class="font-medium">$159.90</p>
+                    </div>
+                    <div class="flex justify-between">
+                        <p class="text-md text-gray-500 font-light">Impuestos:</p>
+                        <p class="font-medium">$30.90</p>
+                    </div>
+                </div>
+                <hr class="ml-8 mr-8 mt-6 divide divide-x-2">
+                <div class="px-8 my-6 space-y-6">
+                    <div class="flex justify-between">
+                        <p class="text-md text-gray-500 font-medium">Total:</p>
+                        <p class="font-medium">$300.90</p>
+                    </div>
+                    <button class="w-full text-white bg-[#263b51] bg-opacity-90 hover:bg-opacity-100 focus:ring-4 focus:outline-none font-semibold rounded-lg text-sm px-3 py-4 text-center focus:ring-gray-600">Pagar</button>
+                </div>
+            </div>
         </div>
 
             
