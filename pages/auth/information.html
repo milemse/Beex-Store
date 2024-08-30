@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../images/leaf.png" type="image/x-icon">
+
+    <title>Beex Store | Información de Empresa</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="flex flex-col min-w-md items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
+            <div class="w-full p-10 rounded-lg shadow border sm:max-w-2xl">
+                <div class="text-gray-600 text-lg font-medium text-center p-4 flex justify-start">
+                    <div class="pr-10 flex flex-col items-center">
+                        <p>1</p>
+                        <p>Información personal</p>
+                    </div>
+                    <div class="pr-8 flex flex-col items-center">
+                        <img src="../../images/ready.svg" class="w-7 h-7 center">
+                        <p>Información de cuenta</p>
+                    </div>
+                    <div>
+                        <p>3</p>
+                        <p>Verificación</p>
+                    </div>
+                </div>
+                <form class="p-4" action="./verification.html">
+                    <h1 class="pb-8 text-3xl font-semibold">Información de la empresa</h1>
+                    <div class="grid gap-4 mb-4 sm:grid-cols-2">
+                        <div>
+                            <label for="name" class="block mb-2 text-sm font-medium">Nombre Empresa</label>
+                            <input type="text" name="name" id="name" class="border rounded-lg block w-full p-2 placeholder-gray-400 focus:ring-4 border-gray-600 focus:outline-none focus:border-blue-600 focus:ring-offset-0" placeholder="Nombre de la empresa">
+                        </div>
+                        <div>
+                            <label for="email" class="block mb-2 text-sm font-medium">R.F.C.</label>
+                            <input type="text" name="email" id="email" class="border rounded-lg block w-full p-2 placeholder-gray-400 focus:ring-4 focus:outline-none border-gray-600 focus:border-blue-600 focus:ring-offset-0" placeholder="R.F.C. de la Empresa">
+                        </div>
+                        <div>
+                            <label for="password" class="block mb-2 text-sm font-medium">Dirección</label>
+                            <input type="text" name="password" id="password" class="border rounded-lg block w-full p-2 placeholder-gray-400 focus:ring-4 border-gray-600 focus:outline-none focus:border-blue-600 focus:ring-offset-0" placeholder="Dirección de la Empresa">
+                        </div>
+                        <div>
+                            <label for="password" class="block mb-2 text-sm font-medium">Sucursal Principal</label>
+                            <input type="text" name="password" id="password" class="border rounded-lg block w-full p-2 placeholder-gray-400 focus:ring-4 border-gray-600 focus:outline-none focus:border-blue-600 focus:ring-offset-0" placeholder="Nombre de Suc. Principal">
+                        </div>
+                        <div>
+                            <label for="country" class="block mb-2 text-sm font-medium">Número de Surcursales</label>
+                            <select id="country" class="border rounded-lg block w-full p-2 placeholder-gray-400 focus:ring-4 focus:outline-none focus:border-blue-600 border-gray-600 focus:ring-offset-0">
+                                <option selected disabled value=""># de sucursales</option>
+                                <option value="1">1</option>  
+                                <option value="2">2</option>  
+                                <option value="3">3</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="phone" class="block mb-2 text-sm font-medium">Telefono</label>
+                            <input type="text" name="phone" id="phone" class="border rounded-lg block w-full p-2 placeholder-gray-400 focus:ring-4 focus:outline-none border-gray-600 focus:border-blue-600 focus:ring-offset-0" placeholder="55-678-910">
+                        </div>
+                    </div>
+
+                    <div class="grid gap-4 mt-11 sm:grid-cols-2">
+                        <button type="submit" class="w-full focus:ring-4 focus:outline-none font-semibold w-full rounded-lg text-sm px-3 py-2 text-center border border-gray-700 focus:outline-none focus:ring-gray-600">Cancelar</button>
+                        <button type="submit" class="w-full text-white bg-[#263b51] bg-opacity-90 hover:bg-opacity-100 focus:ring-4 focus:outline-none font-semibold w-full rounded-lg text-sm px-3 py-3 text-center focus:ring-gray-600">Siguiente: Verificación</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
