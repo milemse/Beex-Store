@@ -17,7 +17,7 @@
 <body class="bg-[#1f2c43] bg-opacity-5">
     <section>
         <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto h-screen md:h-screen lg:py-0">
-            <div class="w-full rounded-lg shadow border md:mt-0 sm:max-w-md xl:p-0 bg-white border-gray-400">
+            <div class="w-full rounded-lg shadow-lg border md:mt-0 sm:max-w-md xl:p-0 bg-white border-gray-300">
                 <a href="#" class="flex items-center justify-center font-semibold pt-10 text-3xl">
                     <img class="w-10 h-10 mr-2" src="../../images/leaf.png" alt="logo">
                     Beex Store    
@@ -28,21 +28,26 @@
                     </h1>
                     <form class="space-y-4 md:space-y-6" action="#">
                         <div>
-                            <label for="email" class="block mb-2 text-sm font-medium">Introduce tu email</label>
-                            <input type="email" name="email" id="email" class="border rounded-lg block w-full p-2.5 border-gray-600 focus:ring-2 focus:ring-gray-600 focus:outline-none focus:ring-offset-0" placeholder="ejemplo@email.com" required="">
+                            <label for="email" class="block mb-2 text-sm font-medium">Email</label>
+                            <input type="email" name="email" id="email" class="border rounded-lg block w-full p-2.5 border-gray-600 focus:ring-2 focus:ring-gray-600 focus:outline-none focus:ring-offset-0" placeholder="Introduce tu email" required="">
                         </div>
                         <div>
-                            <label for="password" class="block mb-2 text-sm font-medium">Introduce tu contraseña</label>
-                            <input type="password" name="password" id="password" placeholder="••••••••" class="border rounded-lg block w-full p-2.5 border-gray-600 focus:ring-2 focus:ring-gray-600 focus:outline-none focus:ring-offset-0" required="">
+                            <label for="password" class="block mb-2 text-sm font-medium">Contraseña</label>
+                            <input type="password" name="password" id="password" placeholder="Introduce tu contraseña" class="border rounded-lg block w-full p-2.5 border-gray-600 focus:ring-2 focus:ring-gray-600 focus:outline-none focus:ring-offset-0" required="">
                         </div>
                         <div class="flex items-center">
                             <a href="#" class="text-sm font-medium text-blue-500 hover:underline">¿Olvidaste tu contraseña?</a>
                         </div>
                         <button type="submit" class="w-full text-white bg-[#263b51] bg-opacity-90 hover:bg-opacity-100 focus:ring-4 focus:outline-none font-semibold w-full rounded-lg text-sm px-3 py-3 text-center focus:ring-gray-600">Iniciar Sesión</button>
+                        <div class="flex items-center gap-4">
+                            <hr class="divide w-full">
+                            <p class="shrink-0 text-thin text-sm text-gray-500">O si lo prefieres</p>
+                            <hr class="divide w-full">
+                        </div>
                         <button type="button" class="w-full focus:ring-4 focus:outline-none font-semibold w-full rounded-lg text-sm px-3 py-2 text-center border border-gray-700 focus:outline-none focus:ring-gray-600">
                             <div class="inline-flex items-center">
                                 <img class="w-5 h-5 mr-2" src="/../../images/google.svg" alt="logo">
-                                Seguir con Google
+                                Continua con Google
                             </div>
                         </button>
                         <p class="text-sm text-gray-500 dark:text-gray-400">

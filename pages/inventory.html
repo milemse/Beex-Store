@@ -63,53 +63,61 @@
 
 
 
-    <aside class="fixed z-40 h-screen left-0 w-44 mt-16 bg-[#263b51] transition-transform -translate-x-full md:translate-x-0" aria-label="Sidenav" id="drawer-navigation">
+    <aside class="fixed z-40 h-screen left-0 w-44 mt-16 bg-[#263b51] transition-transform -translate-x-full md:translate-x-0 flex flex-col justify-between" aria-label="Sidenav" id="drawer-navigation">
         <ul class="m-4 space-y-4 cursor-pointer">
             <li class="hover:bg-[#1f2c43] rounded-lg">
                 <button class="flex items-center p-2 rounded-lg text-white bg-transparent">
                     <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8v10a1 1 0 0 0 1 1h4v-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v5h4a1 1 0 0 0 1-1V8M1 10l9-9 9 9"/>
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8v10a1 1 0 0 0 1 1h4v-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v5h4a1 1 0 0 0 1-1V8M1 10l9-9 9 9"/>
                     </svg>
                     <a class="ml-3 font-base" href="/index.html">Principal</a>
                 </button>
             </li>
             <li class="flex items-center p-2 rounded-lg hover:bg-[#1f2c43]">
                 <svg class="w-5 h-5 text-gray-50" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 19 18">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.583 5.445h.01M8.86 16.71l-6.573-6.63a.993.993 0 0 1 0-1.4l7.329-7.394A.98.98 0 0 1 10.31 1l5.734.007A1.968 1.968 0 0 1 18 2.983v5.5a.994.994 0 0 1-.316.727l-7.439 7.5a.975.975 0 0 1-1.385.001Z"/>
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13.583 5.445h.01M8.86 16.71l-6.573-6.63a.993.993 0 0 1 0-1.4l7.329-7.394A.98.98 0 0 1 10.31 1l5.734.007A1.968 1.968 0 0 1 18 2.983v5.5a.994.994 0 0 1-.316.727l-7.439 7.5a.975.975 0 0 1-1.385.001Z"/>
                 </svg>
                 <a class="ml-3 text-gray-50 font-base" href="/pages/sales.html">Ventas</a>
             </li>
             <li class="flex items-center p-2 rounded-lg hover:bg-[#1f2c43]">
                 <svg class="w-5 h-5 text-gray-50" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9V4a3 3 0 0 0-6 0v5m9.92 10H2.08a1 1 0 0 1-1-1.077L2 6h14l.917 11.923A1 1 0 0 1 15.92 19Z"/>
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 9V4a3 3 0 0 0-6 0v5m9.92 10H2.08a1 1 0 0 1-1-1.077L2 6h14l.917 11.923A1 1 0 0 1 15.92 19Z"/>
                 </svg>
                 <a class="ml-3 font-base text-gray-50" href="/pages/purchases.html">Compras</a>
             </li>
             <li class="flex items-center p-2 rounded-lg bg-[#1f2c43]">
                 <svg class="w-5 h-5 text-gray-50" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 20">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 17V2a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a2 2 0 0 0-2 2Zm0 0a2 2 0 0 0 2 2h12M5 15V1m8 18v-4"/>
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M1 17V2a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a2 2 0 0 0-2 2Zm0 0a2 2 0 0 0 2 2h12M5 15V1m8 18v-4"/>
                 </svg>
                 <a class="ml-3 font-base text-gray-50" href="/pages/inventory.html">Inventario</a>
             </li>
             <li class="flex items-center p-2 rounded-lg hover:bg-[#1f2c43]">
                 <svg class="w-5 h-5 text-gray-50" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 18">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 3a3 3 0 1 1-1.614 5.53M15 12a4 4 0 0 1 4 4v1h-3.348M10 4.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0ZM5 11h3a4 4 0 0 1 4 4v2H1v-2a4 4 0 0 1 4-4Z"/>
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14 3a3 3 0 1 1-1.614 5.53M15 12a4 4 0 0 1 4 4v1h-3.348M10 4.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0ZM5 11h3a4 4 0 0 1 4 4v2H1v-2a4 4 0 0 1 4-4Z"/>
                 </svg>
                 <a class="ml-3 font-base text-gray-50" href="/pages/clients.html">Clientes</a>
             </li>
             <li class="flex items-center p-2 rounded-lg hover:bg-[#1f2c43]">
                 <svg class="w-5 h-5 text-gray-50" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 16">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.5 10.25a2.25 2.25 0 1 0 0 4.5 2.25 2.25 0 0 0 0-4.5Zm0 0a2.225 2.225 0 0 0-1.666.75H12m3.5-.75a2.225 2.225 0 0 1 1.666.75H19V7m-7 4V3h5l2 4m-7 4H6.166a2.225 2.225 0 0 0-1.666-.75M12 11V2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v9h1.834a2.225 2.225 0 0 1 1.666-.75M19 7h-6m-8.5 3.25a2.25 2.25 0 1 0 0 4.5 2.25 2.25 0 0 0 0-4.5Z"/>
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.5 10.25a2.25 2.25 0 1 0 0 4.5 2.25 2.25 0 0 0 0-4.5Zm0 0a2.225 2.225 0 0 0-1.666.75H12m3.5-.75a2.225 2.225 0 0 1 1.666.75H19V7m-7 4V3h5l2 4m-7 4H6.166a2.225 2.225 0 0 0-1.666-.75M12 11V2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v9h1.834a2.225 2.225 0 0 1 1.666-.75M19 7h-6m-8.5 3.25a2.25 2.25 0 1 0 0 4.5 2.25 2.25 0 0 0 0-4.5Z"/>
                 </svg>
                 <a class="ml-3 font-base text-gray-50" href="/pages/providers.html">Proveedores</a>
             </li>
             <li class="flex items-center p-2 rounded-lg hover:bg-[#1f2c43]">
                 <svg class="w-5 h-5 text-gray-50" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 1v16M1 9h16"/>
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 1v16M1 9h16"/>
                 </svg>
                 <a class="ml-3 font-base text-gray-50" href="/pages/new.html">Nueva Venta</a>
             </li>
         </ul>
+        <div class="mb-20 ml-4 w-36">
+          <li class="flex items-center p-2 rounded-lg hover:bg-[#1f2c43]">
+              <svg class="w-7 h-7 text-gray-50" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M20 12H8m12 0-4 4m4-4-4-4M9 4H7a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h2"/>
+              </svg>
+              <a class="ml-3 font-base text-gray-50" href="/pages/auth/login.html">Salir</a>
+          </li>
+      </div>
     </aside>
 
 
@@ -143,43 +151,93 @@
                   <tr>
                     <th scope="col" class="p-4 text-xs font-bold tracking-wider text-left text-gray-500 uppercase">ID</th>
                     <th scope="col" class="p-4 text-xs font-bold tracking-wider text-left text-gray-500 uppercase">Nombre</th>
-                    <th scope="col" class="p-4 text-xs font-bold tracking-wider text-left text-gray-500 uppercase">Detalle</th>
                     <th scope="col" class="p-4 text-xs font-bold tracking-wider text-left text-gray-500 uppercase">Categoria</th>
                     <th scope="col" class="p-4 text-xs font-bold tracking-wider text-left text-gray-500 uppercase">Estado</th>
+                    <th scope="col" class="p-4 text-xs font-bold tracking-wider text-left text-gray-500 uppercase">Acciones</th>
                   </tr>
                 </thead>
                 <tbody class="bg-white">
                   <tr class="odd:bg-white even:bg-gray-100">
                     <td class="p-4 text-sm font-semibold text-gray-500 whitespace-nowrap">4567</td>
                     <td class="p-4 text-sm font-semibold text-gray-500 whitespace-nowrap">Producto 1</td>
-                    <td class="p-4 text-sm font-normal text-gray-900 whitespace-nowrap">
-                      <button type="submit" class="text-white bg-[#263b51] bg-opacity-90 hover:bg-opacity-100 focus:ring-4 focus:outline-none focus:ring-slate-300 font-semibold w-full rounded-lg text-sm py-2 text-center">Mostrar</button>
-                    </td>
                     <td class="p-4 text-sm font-bold text-gray-500 whitespace-nowrap">Categoria 1</td>
                     <td class="p-4 whitespace-nowrap">
                       <span class="bg-green-100 text-green-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-md border border-green-100">Pagado</span>
+                    </td>
+                    <td class="p-4 whitespace-nowrap flex gap-6">
+                      <button data-tooltip-target="tooltip-view" data-tooltip-style="light" class="rounded-full">
+                        <svg class="w-6 h-6 text-gray-600 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                          <path stroke="currentColor" stroke-width="1.5" d="M21 12c0 1.2-4.03 6-9 6s-9-4.8-9-6c0-1.2 4.03-6 9-6s9 4.8 9 6Z"/>
+                          <path stroke="currentColor" stroke-width="1.5" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
+                        </svg>
+                      </button>
+                      <div id="tooltip-view" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 tooltip">Detalles</div>
+
+                      <button data-tooltip-target="tooltip-edit" data-tooltip-style="light" class="rounded-full">
+                        <svg class="w-6 h-6 text-gray-600 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m14.304 4.844 2.852 2.852M7 7H4a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1v-4.5m2.409-9.91a2.017 2.017 0 0 1 0 2.853l-6.844 6.844L8 14l.713-3.565 6.844-6.844a2.015 2.015 0 0 1 2.852 0Z"/>
+                        </svg>
+                      </button>
+                      <div id="tooltip-edit" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 tooltip">Editar</div>
+                    
+                      <button data-tooltip-target="tooltip-delete" data-tooltip-style="light" class="rounded-full">
+                        <svg class="w-6 h-6 text-red-600 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 7h14m-9 3v8m4-8v8M10 3h4a1 1 0 0 1 1 1v3H9V4a1 1 0 0 1 1-1ZM6 7h12v13a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7Z"/>
+                        </svg>
+                      </button>
+                      <div id="tooltip-delete" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-red-600 border border-gray-200 rounded-lg shadow-sm opacity-0 tooltip">Eliminar</div>
                     </td>
                   </tr>
                   <tr class="odd:bg-white even:bg-gray-100">
                     <td class="p-4 text-sm font-semibold text-gray-500 whitespace-nowrap">4567</td>
                     <td class="p-4 text-sm font-semibold text-gray-500 whitespace-nowrap">Producto 2</td>
-                    <td class="p-4 text-sm font-normal text-gray-900 whitespace-nowrap">
-                      <button type="submit" class="text-white bg-[#263b51] bg-opacity-90 hover:bg-opacity-100 focus:ring-4 focus:outline-none focus:ring-slate-300 font-semibold w-full rounded-lg text-sm py-2 text-center">Mostrar</button>
-                    </td>
                     <td class="p-4 text-sm font-bold text-gray-500 whitespace-nowrap">Categoria 2</td>
                     <td class="p-4 whitespace-nowrap">
                       <span class="bg-red-100 text-red-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-md border border-red-100">Deuda</span>
+                    </td>
+                    <td class="p-4 flex gap-6">
+                      <button class="rounded-full">
+                        <svg class="w-6 h-6 text-gray-600 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                          <path stroke="currentColor" stroke-width="1.5" d="M21 12c0 1.2-4.03 6-9 6s-9-4.8-9-6c0-1.2 4.03-6 9-6s9 4.8 9 6Z"/>
+                          <path stroke="currentColor" stroke-width="1.5" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
+                        </svg>
+                      </button>
+                      <button class="rounded-full">
+                        <svg class="w-6 h-6 text-gray-600 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m14.304 4.844 2.852 2.852M7 7H4a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1v-4.5m2.409-9.91a2.017 2.017 0 0 1 0 2.853l-6.844 6.844L8 14l.713-3.565 6.844-6.844a2.015 2.015 0 0 1 2.852 0Z"/>
+                        </svg>
+                      </button>
+                      <button class="rounded-full">
+                        <svg class="w-6 h-6 text-gray-600 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 7h14m-9 3v8m4-8v8M10 3h4a1 1 0 0 1 1 1v3H9V4a1 1 0 0 1 1-1ZM6 7h12v13a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7Z"/>
+                        </svg>
+                      </button>
                     </td>
                   </tr>
                   <tr class="odd:bg-white even:bg-gray-100">
                     <td class="p-4 text-sm font-semibold text-gray-500 whitespace-nowrap">4567</td>
                     <td class="p-4 text-sm font-semibold text-gray-500 whitespace-nowrap">Producto 3</td>
-                    <td class="p-4 text-sm font-normal text-gray-900 whitespace-nowrap">
-                      <button type="submit" class="text-white bg-[#263b51] bg-opacity-90 hover:bg-opacity-100 focus:ring-4 focus:outline-none focus:ring-slate-300 font-semibold w-full rounded-lg text-sm py-2 text-center">Mostrar</button>
-                    </td>
                     <td class="p-4 text-sm font-bold text-gray-500 whitespace-nowrap">Categoria 3</td>
                     <td class="p-4 whitespace-nowrap">
                       <span class="bg-purple-100 text-purple-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-md border border-purple-100">En progreso</span>
+                    </td>
+                    <td class="p-4 whitespace-nowrap flex gap-6">
+                      <button class="rounded-full">
+                        <svg class="w-6 h-6 text-gray-600 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                          <path stroke="currentColor" stroke-width="1.5" d="M21 12c0 1.2-4.03 6-9 6s-9-4.8-9-6c0-1.2 4.03-6 9-6s9 4.8 9 6Z"/>
+                          <path stroke="currentColor" stroke-width="1.5" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
+                        </svg>
+                      </button>
+                      <button class="rounded-full">
+                        <svg class="w-6 h-6 text-gray-600 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m14.304 4.844 2.852 2.852M7 7H4a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1v-4.5m2.409-9.91a2.017 2.017 0 0 1 0 2.853l-6.844 6.844L8 14l.713-3.565 6.844-6.844a2.015 2.015 0 0 1 2.852 0Z"/>
+                        </svg>
+                      </button>
+                      <button class="rounded-full">
+                        <svg class="w-6 h-6 text-gray-600 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 7h14m-9 3v8m4-8v8M10 3h4a1 1 0 0 1 1 1v3H9V4a1 1 0 0 1 1-1ZM6 7h12v13a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7Z"/>
+                        </svg>
+                      </button>
                     </td>
                   </tr>
                 </tbody>
